@@ -1,0 +1,16 @@
+.flex {
+  display:flex;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-jc-cen {
+  display:flex;
+  justify-content:center;
+}
+.flex-ac-spbe {
+  display:flex;
+  align-content:space-between;
+}

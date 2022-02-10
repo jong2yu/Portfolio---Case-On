@@ -1,0 +1,258 @@
+@import "common.css";
+@import "reset.css";
+
+.nav {
+    display:flex;
+    margin:30px auto 38px;
+}
+.nav li a {
+    font-size:20px;
+    font-weight:300;
+}
+.nav li span {
+    margin:0 6px 0;
+}
+
+/* 서브(Description)페이지 스타일 영역 */
+.top {
+    display:flex;
+}
+.photo {
+    width:726px;
+    height:666px;
+    border:1px solid #aaa;
+    display:flex;
+    justify-content:space-between;
+}
+.photo .list {
+    width:90px;
+    height:572px;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:center;
+    margin:30px 40px;
+}
+.photo .list li a img {
+    height:90px;
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.photo .list li a img:hover {
+    border:2px solid #ff6b23;
+    border-radius:2px;
+}
+.photo .photomain {
+    width:500px;
+    height:500px;
+    margin:86px auto;
+}
+.iteminfo {
+    margin:44px 0 0 80px;
+    width:400px;
+    height:550px;
+    padding:20px;
+}
+.iteminfo li strong {
+    font-size:36px;
+    font-weight:700;
+}
+.iteminfo li .cost {
+    font-size:16px;
+    color:#aaa;
+    text-decoration:line-through;
+    display:block;
+    margin:10px 78px -16px;
+}
+.iteminfo li .discount {
+    font-size:50px;
+    font-weight:700;
+    color:#ff6b23;
+    word-spacing:-6px;
+    display:block;
+    margin-bottom:10px;
+}
+.iteminfo li .discount strong {
+    font-size:40px;
+    font-weight:700;
+    color:#ff6b23;
+    margin-left:-10px;
+}
+.iteminfo li .discount .discountprice {
+    font-size:35px;
+    font-weight:700;
+    color:#000;
+}
+.iteminfo li .accumulate {
+    font-size:18px;
+    display:block;
+}
+.iteminfo .carddiscount {
+    font-size:18px;
+}
+.iteminfo .carddiscount a {
+    position:relative;
+    margin-right:6px;
+}
+.iteminfo .carddiscount a:after {
+    content:'';
+    width:1px;
+    height:14px;
+    background:#aaa;
+    display:block;
+    position:absolute;
+    left:106%;
+    top:30%;
+}
+.iteminfo .carddiscount a:nth-child(3):after {
+    display:none;
+}
+.iteminfo .underscore {
+    width:100%;
+    height:50px;
+    line-height:50px;
+    position:relative;
+}
+.iteminfo .underscore:after {
+    content:'';
+    height:1px;
+    background:#aaa;
+    position:absolute;
+    left:-20px;
+    right:-20px;
+    display:block;
+}
+.iteminfo .arrow {
+    position:relative;
+    cursor:pointer;
+}
+.iteminfo .arrow span {
+    position:absolute;
+    left:92%;
+    top:50%;
+    transform:translateX(-50%);
+}
+.iteminfo .option {
+    margin-top:76px;
+}
+.iteminfo .option a {
+    font-size:20px;
+    display:block;
+    margin-bottom:20px;
+}
+.iteminfo .option select {
+    margin-bottom:40px;
+    cursor:pointer;
+}
+.iteminfo .option .select {
+    width:100%;
+    padding:.8em .5em;
+    border:1px solid #aaa;
+    font-family:inherit;
+    background:url('../images/sub/arrow.png') no-repeat 95% 50%;
+    border-radius:0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.iteminfo .button {
+    width:100%;
+    height:124px;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:space-between;
+}
+.iteminfo .button .top {
+    font-size:20px;
+    font-weight:700;
+    color:#ff6b23;
+    display:inline-block;
+    width:48%;
+    height:54px;
+    border:1px solid #ff6b23;
+    border-radius:10px;
+    text-align:center;
+    line-height:54px;
+}
+.iteminfo .button .payment {
+    font-size:20px;
+    font-weight:700;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+    height:54px;
+    background:#ff6b23;
+    border-radius:10px;
+    text-align:center;
+    line-height:54px;
+}
+.iteminfo .button .top:hover {
+    background:#ff6b23;
+    color:#fff;
+}
+.iteminfo .button .payment:hover {
+    background:#ad5216;
+}
+
+.middle {
+    height:54px;
+    border-bottom:1px solid #aaa;
+    margin-top:90px;
+}
+.tab {
+    width:600px;
+    height:100%;
+    display:flex;
+    margin:0 auto;
+}
+.tab li {
+    width:25%;
+    height:100%;
+    text-align: center;
+    line-height:48px;
+    cursor:pointer;
+    position:relative;
+}
+.tab li:before {
+    content:'';
+    width:100%;
+    height:2px;
+    background:#ff6b23;
+    position:absolute;
+    left:0;
+    bottom:-1px;
+    opacity:0;
+}
+.tab li:hover:before {
+    opacity:1;
+}
+.tab li span {
+    font-size:20px;
+    font-weight:500;
+}
+
+.bottom {
+    width:100%;
+}
+.imginfo img {
+    display:block;
+    width:1200px;
+    margin:0 auto;
+}
+.bottom span {
+    width:340px;
+    height:64px;
+    background:#ff6b23;
+    font-size:20px;
+    font-weight:500;
+    color:#fff;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    line-height:64px;
+    cursor:pointer;
+}
+.bottom span:hover {
+    background:#ad5216;
+}

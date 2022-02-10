@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case On : 핸드폰의 모든것</title>
+    <link href="css/sub3_design.css" rel="stylesheet">
+    <link href="images/common/favicon.png" rel="shortcut icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.top .wrap .phoneselect .phone li a').mouseover(function(){
+                var IMG=$(this).attr('href');
+                $('.top .wrap .show .phone').attr('src',IMG);
+            }).click(function(){
+                return false;
+            });
+
+            // 질문. 테두리, 간격 유지??
+            $('.top .wrap .phoneselect .morewrap .brand li').click(function(){
+                $('.top .wrap .phoneselect .morewrap .brand li').removeClass('on');
+                $(this).addClass('on');
+            });
+
+            $('.top .wrap .phone li a').click(function(){
+                $(this).addClass('on');
+            });
+
+            $('.middle .accselect li a').click(function(){
+                $(this).addClass('on');
+            });
+
+            $('.middle .acc li a img').click(function(){
+                $(this).addClass('on');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="inner">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/common/logo.png" alt="로고">
+            </a>
+        </h1>
+        <ul class="menu">
+            <li>
+                <a href="sub1_product.html">스마트폰</a>
+            </li>
+            <li>
+                <a href="sub1_product.html">액세서리</a>
+            </li>
+            <li>
+                <a href="#">커뮤니티</a>
+            </li>
+            <li>
+                <a href="sub1_product.html">컬렉션</a>
+            </li>
+            <li>
+                <a href="#">case on?</a>
+            </li>
+        </ul>
+        <div class="icon">
+            <a href="#">
+                <img src="images/common/icon-search.png" alt="검색">
+            </a>
+            <a href="#">
+                <img src="images/common/icon-cart.png" alt="카트">
+            </a>
+            <a href="#">
+                <img src="images/common/icon-people.png" alt="마이페이지">
+            </a>
+        </div>
+    </header>
+    <span class="header_line"></span>
+    <ul class="nav inner">
+        <li>
+            <a href="index.html">Home</a>
+            <span> / </span>
+        </li>
+        <li>
+            <a href="sub1_product.html">상품페이지</a>
+            <span> / </span>
+        </li>
+        <li>
+            <a href="sub2_description.html">iPhone13 Pro</a>
+            <span> / </span>
+        </li>
+        <li>
+            <a href="sub3_design.html">디자인</a>
+        </li>
+    </ul>
+
+    <section class="top">
+        <h2 class="hide">액세서리 선택 영역</h2>
+        <div class="wrap">
+            <div class="show">
+                <img class="phone" src="images/sub/iphone13pro.png" alt="phone">
+                <img class="rotation" src="images/sub/free-icon-360-degrees-1758454.png" alt="360">
+            </div>
+            <div class="phoneselect">
+                <div class="morewrap">
+                    <strong>기종선택</strong>
+                    <ul class="brand">
+                        <li class="on"><a href="#">애플</a></li>
+                        <li><a href="#">삼성</a></li>
+                        <li><a href="#">구글</a></li>
+                        <li><a href="#">샤오미</a></li>
+                    </ul>
+                </div>
+                <ul class="phone">
+                    <li>
+                        <a href="images/sub/iphone13pro.png">
+                            <img src="images/sub/iphone13pro.png" alt="iphone13pro">
+                            <span>iPhone13 Pro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone13mini.png">
+                            <img src="images/sub/iphone13mini.png" alt="iphone13mini">
+                            <span>iPhone13 Mini</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone13promax.png">
+                            <img src="images/sub/iphone13promax.png" alt="iphone13promax">
+                            <span>iPhone13<br>Pro Max</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone12.png">
+                            <img src="images/sub/iphone12.png" alt="iphone12">
+                            <span>iPhone12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone12pro.png">
+                            <img src="images/sub/iphone12pro.png" alt="iphone12pro">
+                            <span>iPhone12 Pro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone12promax.png">
+                            <img src="images/sub/iphone12promax.png" alt="iphone12promax">
+                            <span>iPhone12<br>Pro Max</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone11pro.png">
+                            <img src="images/sub/iphone11pro.png" alt="iphone11pro">
+                            <span>iPhone11 Pro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="images/sub/iphone11promax.png">
+                            <img src="images/sub/iphone11promax.png" alt="iphone11promax">
+                            <span>iPhone11<br>Pro Max</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="finalprice">최종 가격 : 1,000,000원</span>
+            </div>
+        </div>
+        <span class="underscore"></span>
+    </section>
+
+    <section class="middle">
+        <h2 class="hide">액세서리 선택 영역</h2>
+        <h4>액세서리 선택</h4>
+        <ul class="accselect">
+            <li><a href="#">케이스</a></li>
+            <li><a href="#">필름</a></li>
+            <li><a href="#">이어폰</a></li>
+            <li><a href="#">충전기</a></li>
+            <li><a href="#">케이블</a></li>
+        </ul>
+        <ul class="acc">
+            <li><a href="#"><img src="images/sub/acc01.png" alt="acc1"></a></li>
+            <li><a href="#"><img src="images/sub/acc02.png" alt="acc2"></a></li>
+            <li><a href="#"><img src="images/sub/acc03.png" alt="acc3"></a></li>
+            <li><a href="#"><img src="images/sub/acc04.png" alt="acc4"></a></li>
+            <li><a href="#"><img src="images/sub/acc05.png" alt="acc5"></a></li>
+            <li><a href="#"><img src="images/sub/acc06.png" alt="acc6"></a></li>
+            <li><a href="#"><img src="images/sub/acc07.png" alt="acc7"></a></li>
+            <li><a href="#"><img src="images/sub/acc08.png" alt="acc8"></a></li>
+            <li><a href="#"><img src="images/sub/acc01.png" alt="acc1"></a></li>
+            <li><a href="#"><img src="images/sub/acc02.png" alt="acc2"></a></li>
+            <li><a href="#"><img src="images/sub/acc03.png" alt="acc3"></a></li>
+            <li><a href="#"><img src="images/sub/acc04.png" alt="acc4"></a></li>
+            <li><a href="#"><img src="images/sub/acc05.png" alt="acc5"></a></li>
+            <li><a href="#"><img src="images/sub/acc06.png" alt="acc6"></a></li>
+            <li><a href="#"><img src="images/sub/acc07.png" alt="acc7"></a></li>
+            <li><a href="#"><img src="images/sub/acc08.png" alt="acc8"></a></li>
+            <li><a href="#"><img src="images/sub/acc01.png" alt="acc1"></a></li>
+            <li><a href="#"><img src="images/sub/acc02.png" alt="acc2"></a></li>
+            <li><a href="#"><img src="images/sub/acc03.png" alt="acc3"></a></li>
+            <li><a href="#"><img src="images/sub/acc04.png" alt="acc4"></a></li>
+            <li><a href="#"><img src="images/sub/acc05.png" alt="acc5"></a></li>
+            <li><a href="#"><img src="images/sub/acc06.png" alt="acc6"></a></li>
+            <li><a href="#"><img src="images/sub/acc07.png" alt="acc7"></a></li>
+            <li><a href="#"><img src="images/sub/acc08.png" alt="acc8"></a></li>
+        </ul>
+    </section>
+
+    <section class="collection">
+        <h2 class="hide">Collection 영역</h2>
+        <h4>Collection</h4>
+        <span></span>
+        <ul>
+            <li>
+                <a href="#"><img src="images/main/collection1.jpg" alt="collection1"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/main/collection2.jpg" alt="collection2"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/main/collection3.jpg" alt="collection3"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/main/collection4.jpg" alt="collection4"></a>
+            </li>
+        </ul>
+    </section>
+
+
+    <footer>
+        <section>
+            <h2 class="hide">footer 영역</h2>
+            <ul class="menu">
+                <li class="menubox">
+                    <span>고객지원</span>
+                    <a href="#">- case on<br></a>
+                    <a href="#">- 고객센터<br></a>
+                    <a href="#">- 카톡 플러스친구<br></a>
+                    <a href="#">- 인스타그램<br></a>
+                    <a href="#">- 커뮤니티<br></a>
+                </li>
+                <li class="menubox">
+                    <span>카테고리</span>
+                    <a href="#">- 스마트폰<br></a>
+                    <a href="#">- 케이스<br></a>
+                    <a href="#">- 필름<br></a>
+                    <a href="#">- 이어폰<br></a>
+                    <a href="#">- 충전기<br></a>
+                    <a href="#">- 케이블<br></a>
+                </li>
+                <li class="menubox">
+                    <span>case on</span>
+                    <a href="#">- 회사소개<br></a>
+                    <a href="#">- 약관안내<br></a>
+                </li>
+                <li class="snsbox">
+                    <span>팔로우하기</span>
+                    <div class="sns">
+                        <a href="#" class="instagram"></a>
+                        <a href="#" class="youtube"></a>
+                        <a href="#" class="kakaotalk"></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="info">
+                <li>
+                    <p>주식회사립슨<br>
+                    주소 : 06048 서울특별시 강남구 언주로147길 16 (논현동) 3F | 대표이사 : 최종규 | 사업자 등록번호 : 259-86-00120 | 통신판매업 신고번호 : 2015-서울강남-01818호 [사업자정보확인]<br>
+                    이메일 : contact@lipson.kr | 고객센터 : 1661-4346 | 개인정보관리 책임자 : 주나영</p>
+                </li>
+                <li>
+                    <p class="copyright">Copyright © 2021 Caseon Co. Ltd. All rights reserved</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

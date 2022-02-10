@@ -1,0 +1,150 @@
+@import "common.css";
+@import "reset.css";
+
+.nav {
+    display:flex;
+    margin:30px auto 38px;
+}
+.nav li a {
+    font-size:20px;
+    font-weight:300;
+}
+.nav li span {
+    margin:0 6px 0;
+}
+
+/* 서브(Product)페이지 스타일 영역 */
+.product {
+    display:flex;
+    justify-content:space-between;
+}
+.product h2 {
+    display:none;
+}
+.product .select {
+    width:176px;
+    height:796px;
+    border:1px solid #aaa;
+    border-radius:10px;
+}
+.product .select li {
+    margin:36px 40px 30px;
+    position:relative;
+}
+.product .select li:first-child,
+.product .select li a {
+    cursor:pointer;
+}
+.product .select li:before {
+    position:absolute;
+    content:'';
+    width:146px;
+    height:1px;
+    background:#aaa;
+    left:50%;
+    top:-6%;
+    transform:translate(-50%, 0);
+}
+.product .select li:first-child:before {
+    display:none;
+}
+.product .select li:first-child strong:hover,
+.product .select li > a:hover {
+    color:#ff6b33;
+}
+.product .select li strong {
+    font-size:20px;
+    font-weight:600;
+    line-height:2;
+}
+.product .select li a {
+    font-size:20px;
+    font-weight:500;
+    line-height:1.6;
+    position:relative;
+    padding-left:10px;
+}
+.product .select li a:before {
+    position:absolute;
+    left:0;
+    top:50%;
+    content:'';
+    width:6px;
+    height:2px;
+    margin-right:10px;
+    background:#111;
+}
+
+.product .phone {
+    width:844px;
+    height:882px;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:space-between;
+}
+.product .phone li {
+    width:264px;
+    height:428px;
+    border:1px solid #000;
+    border-radius:20px;
+}
+.product .phone li a > * {
+    display:block;
+    text-align:center;
+    /* background:pink; */
+}
+.product .phone li a img {
+    margin:0 auto 4px;
+    height:260px;
+}
+.product .phone li a strong {
+    font-size:18px;
+    font-weight:500;
+    margin:0 auto 6px;
+}
+.product .phone li a span {
+    font-size:16px;
+    font-weight:400;
+    line-height:22px;
+}
+.product .phone li a p {
+    margin:16px auto 0;
+    font-size:18px;
+    font-weight:600;
+    color:#fff;
+    width:230px;
+    height:50px;
+    background:#ff6b23;
+    border-radius:10px;
+    line-height:50px;
+}
+.product .phone li a p:hover {
+    background:#ad5216;
+}
+
+.page {
+    margin:144px auto 0px;
+    width:900px;
+    height:830px;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+}
+.page li a {
+    display:block;
+    width:100%;
+    position:relative;
+}
+.page li a span {
+    position:absolute;
+    font-size:40px;
+    font-weight:700;
+    white-space:nowrap;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+.page li:last-child a span {
+    color:#fff;
+}

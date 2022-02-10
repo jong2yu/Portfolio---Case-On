@@ -1,0 +1,242 @@
+@import "common.css";
+@import "reset.css";
+
+.nav {
+    display:flex;
+    margin:30px auto 38px;
+}
+.nav li a {
+    font-size:20px;
+    font-weight:300;
+}
+.nav li span {
+    margin:0 6px 0;
+}
+
+/* 서브(Description)페이지 스타일 영역 */
+.top {
+    width:100%;
+    height:600px;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+.wrap {
+    display:flex;
+    margin:0 auto;
+}
+.wrap:before {
+    content:'';
+    background:#aaa;
+    width:100%;
+    height:1px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+.wrap .show {
+    width:330px;
+    height:400px;
+    text-align:center;
+    margin:56px 40px 0 0;
+}
+.wrap .show .phone {
+    width:316px;
+    height:400px;
+}
+.wrap .show .rotation {
+    width:54px;
+    cursor:pointer;
+}
+.wrap .phoneselect .morewrap {
+    display:flex;
+}
+.wrap .phoneselect .morewrap strong {
+    font-size:34px;
+    font-weight:700;
+    margin:6px 30px 10px 6px;
+}
+.wrap .phoneselect .brand {
+    display:flex;
+    align-items:center;
+}
+.wrap .phoneselect .brand li {
+    width:86px;
+    height:44px;
+    border:1px solid #000;
+    border-radius:10px;
+    margin-right:6px;
+}
+.wrap .phoneselect .brand li a {
+    font-size:20px;
+    font-weight:500;
+    line-height:42px;
+    display:block;
+    text-align:center;
+    margin-top:-3px;
+    border:3px solid transparent;
+    border-radius:10px;
+}
+.wrap .phoneselect .brand li.on {
+    border:1px solid transparent;
+}
+.wrap .phoneselect .brand li.on a, 
+.wrap .phoneselect .brand li a:hover {
+    border:3px solid #ff6b23;
+    color:#ff6b23;
+    width:88px;
+    margin-left:-2px;
+    border-radius:13px;
+    cursor:pointer;
+}
+.wrap .phoneselect .phone {
+    width:600px;
+    border:1px solid #aaa;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    text-align:center;
+    padding:30px 48px;
+}
+.wrap .phoneselect .phone li a img {
+    width:106px;
+    height:130px;
+    margin:10px 0 6px;
+    cursor:pointer;
+    box-sizing:initial;
+    border:4px solid transparent;
+    border-radius:10px;
+}
+.wrap .phoneselect .phone li a span {
+    display:block;
+    font-size:16px;
+    font-weight:400;
+    cursor:pointer;
+}
+.wrap .phoneselect .phone li a:hover img {
+    border:4px solid #ff6b23;
+}
+.wrap .phoneselect .phone li a:hover span {
+    color:#ff6b23;
+}
+.wrap .phoneselect .finalprice {
+    font-size:32px;
+    font-weight:500;
+    display:inline-flex;
+    margin:44px 142px;
+}
+
+.middle {
+    width:990px;
+    height:480px;
+    display:flex;
+    flex-wrap:wrap;
+    margin:120px auto;
+}
+.middle h4 {
+    font-size:34px;
+    font-weight:700;
+    display:block;
+    margin-right:66px;
+}
+.middle .accselect {
+    display:flex;
+}
+.middle .accselect li {
+    width:80px;
+    height:42px;
+    border:1px solid #000;
+    border-radius:10px;
+    margin-right:14px;
+}
+.middle .accselect li a {
+    width:80px;
+    height:42px;
+    font-size:16px;
+    font-weight:500;
+    display:block;
+    text-align:center;
+    line-height:32px;
+    border:4px solid transparent;
+    border-radius:10px;
+}
+.middle .accselect li a:hover {
+    width:82px;
+    height:44px;
+    cursor:pointer;
+    border:4px solid #ff6b23;
+    color:#ff6b23;
+    margin:-2px 0 0 -1px;
+    line-height:36px;
+    /* 글씨 가운데 */
+}
+.middle .acc {
+    width:990px;
+    height:369px;
+    padding:32px 32px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    overflow:scroll;
+    border:1px solid #aaa;
+}
+.middle .acc li {
+    margin-right:14px;
+}
+.middle .acc li:nth-child(8) ~ li a img {
+    display:block;
+    margin-top:14px;
+}
+.middle .acc li a img {
+    border:4px solid transparent;
+}
+.middle .acc li a img:hover {
+    border:4px solid #ff6b23;
+    cursor:pointer;
+}
+
+.collection h4 {
+    font-size:50px;
+    font-weight:900;
+}
+.collection span {
+    width:1110px;
+    height:1px;
+    background:#aaa;
+}
+.collection {
+    width:1200px;
+    height:486px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:space-between;
+    justify-content:center;
+}
+.collection ul {
+    width:100%;
+    height:390px;
+    display:flex;
+    justify-content:center;
+    background:#ffe6dc;
+}
+.collection ul li {
+    margin:auto 0;
+}
+.collection ul li ~ li {
+    margin-left:38px;
+}
+.collection ul li a img {
+    border:6px solid #fff;
+}
+
+
+.on {
+    width:100%;
+    height:100%;
+    display:block;
+    box-sizing:border-box;
+    border:3px solid #ff6b23;
+    color:#ff6b23;
+}

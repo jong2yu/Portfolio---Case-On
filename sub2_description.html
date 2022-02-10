@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case On : 핸드폰의 모든것</title>
+    <link href="css/sub2_description.css" rel="stylesheet">
+    <link href="images/common/favicon.png" rel="shortcut icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.top .photo .list li a').mouseover(function(){
+                var IMG=$(this).attr('href');
+                $('.top .photo .photomain img').attr('src',IMG);
+            }).click(function(){
+                return false;
+            });
+
+            $( ".bottom span" ).click(function() {
+                $( ".bottom ul li img" ).toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="inner">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="images/common/logo.png" alt="로고">
+            </a>
+        </h1>
+        <ul class="menu">
+            <li>
+                <a href="sub1_product.html">스마트폰</a>
+            </li>
+            <li>
+                <a href="sub1_product.html">액세서리</a>
+            </li>
+            <li>
+                <a href="#">커뮤니티</a>
+            </li>
+            <li>
+                <a href="sub1_product.html">컬렉션</a>
+            </li>
+            <li>
+                <a href="#">case on?</a>
+            </li>
+        </ul>
+        <div class="icon">
+            <a href="#">
+                <img src="images/common/icon-search.png" alt="검색">
+            </a>
+            <a href="#">
+                <img src="images/common/icon-cart.png" alt="카트">
+            </a>
+            <a href="#">
+                <img src="images/common/icon-people.png" alt="마이페이지">
+            </a>
+        </div>
+    </header>
+    <span class="header_line"></span>
+    <ul class="nav inner">
+        <li>
+            <a href="index.html">Home</a>
+            <span> / </span>
+        </li>
+        <li>
+            <a href="sub1_product.html">상품페이지</a>
+            <span> / </span>
+        </li>
+        <li>
+            <a href="sub2_description.html">iPhone13 Pro</a>
+        </li>
+    </ul>
+
+
+
+    <section class="top inner">
+        <h2 class="hide">상품 영역</h2>
+        <article class="photo">
+            <h2 class="hide">사진리스트 영역</h2>
+            <ul class="list">
+                <li>
+                    <a href="images/sub/iphone13pro_pic01.jpg">
+                        <img src="images/sub/iphone13pro_pic01.jpg" alt="iphon13pro1">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/sub/iphone13pro_pic02_zoom.png">
+                        <img src="images/sub/iphone13pro_pic02.jpg" alt="iphon13pro2">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/sub/iphone13pro_pic03.jpg">
+                        <img src="images/sub/iphone13pro_pic03.jpg" alt="iphon13pro3">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/sub/iphone13pro_pic04.jpg">
+                        <img src="images/sub/iphone13pro_pic04.jpg" alt="iphon13pro4">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/sub/iphone13pro_pic05.jpg">
+                        <img src="images/sub/iphone13pro_pic05.jpg" alt="iphon13pro5">
+                    </a>
+                </li>
+                <li>
+                    <a href="images/sub/iphone13pro_pic06.jpg">
+                        <img src="images/sub/iphone13pro_pic06.jpg" alt="iphon13pro6">
+                    </a>
+                </li>
+            </ul>
+            <div class="photomain"><img src="images/sub/iphone13pro_pic01.jpg" alt="iphon13pro1"></div>
+        </article>
+        <ul class="iteminfo">
+            <li>
+                <strong>iPhone13 Pro</strong>
+            </li>
+            <li>
+                <span class="cost">1,400,000원</span>
+            </li>
+            <li>
+                <span class="discount">3
+                    <strong>%</strong>
+                    <span class="discountprice">1,000,000원</span>
+                </span>
+            </li>
+            <li class="underscore arrow">
+                <p class="accumulate">최대 2.3% 적립</p>
+                <span><img src="images/sub/arrow.png" alt="arrow"></span>
+            </li>
+            <li class="carddiscount underscore arrow">
+                <a href="#">카드할인</a>
+                <a href="#">무이자 할부</a>
+                <a href="#">카드추가혜택</a>
+                <span><img src="images/sub/arrow.png" alt="arrow"></span>
+            </li>
+            <li class="option">
+                <a href="#">옵션선택</a>
+                <select name="select" class="select">
+                    <option disabled selected>선택</option>
+                    <option value="color">color</option>
+                    <option value="color">color</option>
+                    <option value="color">color</option>
+                </select>
+            </li>
+            <li class="button">
+                <a class="design top" href="sub3_design.html">Design</a>
+                <a class="cart top" href="#">담기</a>
+                <a class="payment" href="#">결제</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="middle inner">
+        <h2 class="hide">Tab 영역</h2>
+        <ul class="tab">
+            <li>
+                <span>상세설명</span>
+            </li>
+            <li>
+                <span>구매후기</span>
+            </li>
+            <li>
+                <span>상품문의</span>
+            </li>
+            <li>
+                <span>교환/반품</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="bottom">
+        <h2 class="hide">Info 영역</h2>
+        <ul>
+            <li class="imginfo">
+                <img src="images/sub/iphone13_productinformation.png" alt="imginfo">
+            </li>
+        </ul>
+        <span>상세정보 더보기</span>
+    </section>
+
+
+
+
+    <footer>
+        <section>
+            <h2 class="hide">footer 영역</h2>
+            <ul class="menu">
+                <li class="menubox">
+                    <span>고객지원</span>
+                    <a href="#">- case on<br></a>
+                    <a href="#">- 고객센터<br></a>
+                    <a href="#">- 카톡 플러스친구<br></a>
+                    <a href="#">- 인스타그램<br></a>
+                    <a href="#">- 커뮤니티<br></a>
+                </li>
+                <li class="menubox">
+                    <span>카테고리</span>
+                    <a href="#">- 스마트폰<br></a>
+                    <a href="#">- 케이스<br></a>
+                    <a href="#">- 필름<br></a>
+                    <a href="#">- 이어폰<br></a>
+                    <a href="#">- 충전기<br></a>
+                    <a href="#">- 케이블<br></a>
+                </li>
+                <li class="menubox">
+                    <span>case on</span>
+                    <a href="#">- 회사소개<br></a>
+                    <a href="#">- 약관안내<br></a>
+                </li>
+                <li class="snsbox">
+                    <span>팔로우하기</span>
+                    <div class="sns">
+                        <a href="#" class="instagram"></a>
+                        <a href="#" class="youtube"></a>
+                        <a href="#" class="kakaotalk"></a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="info">
+                <li>
+                    <p>주식회사립슨<br>
+                    주소 : 06048 서울특별시 강남구 언주로147길 16 (논현동) 3F | 대표이사 : 최종규 | 사업자 등록번호 : 259-86-00120 | 통신판매업 신고번호 : 2015-서울강남-01818호 [사업자정보확인]<br>
+                    이메일 : contact@lipson.kr | 고객센터 : 1661-4346 | 개인정보관리 책임자 : 주나영</p>
+                </li>
+                <li>
+                    <p class="copyright">Copyright © 2021 Caseon Co. Ltd. All rights reserved</p>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
